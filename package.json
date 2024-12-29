@@ -11,7 +11,9 @@
     "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
     "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
     "lint": "eslint .",
-    "fire": "firebase emulators:start --only auth,firestore,database,storage"
+    "fire": "firebase emulators:start --only auth,firestore,database,storage",
+    "listen": "lsof -i :8080 && lsof -i :9000",
+    "kill": "kill -9"
   },
   "exports": {
     ".": {
