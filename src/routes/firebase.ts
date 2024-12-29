@@ -41,7 +41,7 @@ export const analytics =
 
 if (dev || import.meta.env.MODE === "ci") {
   connectAuthEmulator(auth, "http://localhost:9099");
-  connectFirestoreEmulator(db, "localhost", 8080);
+  connectFirestoreEmulator(db, "localhost", 8081);
   connectDatabaseEmulator(rtdb, "localhost", 9000);
   connectStorageEmulator(storage, "localhost", 9199);
 

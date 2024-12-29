@@ -12,7 +12,8 @@
     "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
     "lint": "eslint .",
     "fire": "firebase emulators:start --only auth,firestore,database,storage",
-    "listen": "lsof -i :8080 && lsof -i :9000",
+    "fire_all": "firebase emulators:start ",
+    "listen": "lsof -i :8081 && lsof -i :9000",
     "kill": "kill -9"
   },
   "exports": {
@@ -39,7 +40,6 @@
     "@typescript-eslint/parser": "^5.45.0",
     "eslint": "^8.28.0",
     "eslint-plugin-svelte": "^2.30.0",
-    "firebase-tools": "^12.4.5",
     "publint": "^0.1.9",
     "svelte": "^4.0.5",
     "svelte-check": "^3.4.3",
