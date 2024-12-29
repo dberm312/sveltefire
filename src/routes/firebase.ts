@@ -22,14 +22,12 @@ import {
 import { getAnalytics } from "firebase/analytics";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAMHfJp1ec85QBo-mnke89qtiYGen9zTSE",
-  authDomain: "sveltefire-testing.firebaseapp.com",
-  databaseURL: "https://sveltefire-testing.firebaseio.com",
-  projectId: "sveltefire-testing",
-  storageBucket: "sveltefire-testing.appspot.com",
-  messagingSenderId: "1030648105982",
-  appId: "1:1030648105982:web:2afebc34841fa242ed4eaf",
-  measurementId: "G-RT6GM89V6K"
+  apiKey: "AIzaSyAkNpMV8Yoy4CTTwD4hXPxkbNmryC-ekNg",
+  authDomain: "sveltefire-testing-f8563.firebaseapp.com",
+  projectId: "sveltefire-testing-f8563",
+  storageBucket: "sveltefire-testing-f8563.firebasestorage.app",
+  messagingSenderId: "713113940573",
+  appId: "1:713113940573:web:f9ac3c9f4c56a92ccc53b4",
 };
 
 // Initialize Firebase
@@ -38,7 +36,8 @@ export const db = getFirestore(app);
 export const rtdb = getDatabase(app);
 export const auth = getAuth(app);
 export const storage = getStorage(app);
-export const analytics = typeof window !== "undefined" ? getAnalytics(app) : null;
+export const analytics =
+  typeof window !== "undefined" ? getAnalytics(app) : null;
 
 if (dev || import.meta.env.MODE === "ci") {
   connectAuthEmulator(auth, "http://localhost:9099");
