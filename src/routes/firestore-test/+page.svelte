@@ -1,13 +1,8 @@
 <script lang="ts">
   import Doc from "$lib/components/Doc.svelte";
-  import SignedOut from '$lib/components/SignedOut.svelte';
+  import SignedOut from "$lib/components/SignedOut.svelte";
   import { signInAnonymously } from "firebase/auth";
-  import {
-    addDoc,
-    collection,
-    orderBy,
-    query,
-  } from "firebase/firestore";
+  import { addDoc, collection, orderBy, query } from "firebase/firestore";
   import Collection from "$lib/components/Collection.svelte";
   import SignedIn from "$lib/components/SignedIn.svelte";
   import { getFirebaseContext } from "$lib/stores/sdk.js";
@@ -17,7 +12,8 @@
   async function addPost(uid: string) {
     const posts = collection(firestore, `users/${uid}/posts`);
     await addDoc(posts, {
-      content: 'firestore item ' + (Math.random() + 1).toString(36).substring(7),
+      content:
+        "firestore item " + (Math.random() + 1).toString(36).substring(7),
       created: Date.now(),
     });
   }
@@ -45,14 +41,12 @@
 <h2>User Owned Posts</h2>
 
 <SignedOut let:auth>
-    <h2>Signed Out</h2>
-   <button on:click={() => signInAnonymously(auth)}>Sign In</button>
+  <h2>Signed Out</h2>
+  <button on:click={() => signInAnonymously(auth)}>Sign In</button>
 </SignedOut>
 
-
-
 <SignedIn let:user>
-  <h2>Collection</h2>
+  <h3>Collection</h3>
   <Collection
     ref={makeQuery(user.uid)}
     startWith={[]}

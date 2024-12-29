@@ -32,12 +32,12 @@
 <h2>User Owned Data</h2>
 
 <SignedOut let:auth>
-  <h2>Signed Out</h2>
+  <h3>Signed Out</h3>
   <button on:click={() => signInAnonymously(auth)}>Sign In</button>
 </SignedOut>
 
 <SignedIn let:user>
-  <h2>Data List</h2>
+  <h3>Data List</h3>
   <NodeList
     path={`users/${user.uid}/posts`}
     startWith={[]}
