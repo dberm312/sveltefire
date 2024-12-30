@@ -14,7 +14,7 @@
     "fire": "firebase emulators:start --only auth,firestore,database,storage",
     "fire_all": "firebase emulators:start ",
     "listen": "lsof -i :8081 && lsof -i :9000",
-    "kill": "kill -9"
+    "kill": "lsof -ti:8081,9000 | xargs kill -9"
   },
   "exports": {
     ".": {
