@@ -10,7 +10,7 @@ test("Renders a list of nodes for an authenticated user in realtime", async ({
 }) => {
   await page.goto("/rtdb-test");
 
-  await page.getByRole("button", { name: "Sign In" }).click();
+  await page.getByRole("button", { name: "Sign In" }).click({ delay: 1000 });
   await expect(page.getByTestId("count")).toContainText("0 posts");
   await page.getByRole("button", { name: "Add Post" }).click();
   await expect(page.getByTestId("count")).toContainText("1 posts");

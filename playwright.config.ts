@@ -9,6 +9,7 @@ export default defineConfig({
   testDir: "tests",
   testMatch: /(.+\.)?(test|spec)\.[jt]s/,
   // workers: 1, // Set to run only one worker at a time
+  // maxFailures: 1, // Stop after first failure
   // use: {
   //   headless: false, // Set to run in headed mode (shows browser window)
   // },
