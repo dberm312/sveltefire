@@ -1,6 +1,6 @@
 {
   "name": "sveltefire5",
-  "version": "0.5.2",
+  "version": "0.5.3",
   "description": "This is a fork of the sveltefire package updated to svelte 5 and firebase 11",
   "scripts": {
     "dev": "vite dev",

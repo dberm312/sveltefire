@@ -1,16 +1,9 @@
 <div align="center">
-<img width="128px" src="https://github.com/codediodeio/sveltefire/blob/master/docs/public/logo.png?raw=true">
+<img width="128px" src="https://github.com/dberm312/sveltefire/blob/master/docs/public/logo.png?raw=true">
 <h1>SvelteFire <a href=""></h1>
-<!-- <img alt="npm" src="https://img.shields.io/npm/dy/sveltefire">
-<a href="https://discord.gg/fireship" target="_blank"><img alt="Discord" src="https://img.shields.io/discord/1015095797689360444?label=Discord"></a>
-<img alt="License" src="https://img.shields.io/github/license/codediodeio/sveltefire"> -->
 <h6>This is an updated version of the <a href="https://www.npmjs.com/package/sveltefire" target="_blank">SvelteFire Package</a> to be used with Svelte 5, Firebase 11, and Sveltekit 2</h6>
 <hr />
 </div>
-
-<!-- ![npm](https://img.shields.io/npm/dy/sveltefire)
-![Discord](https://img.shields.io/discord/1015095797689360444)
-![GitHub License](https://img.shields.io/github/license/codediodeio/sveltefire) -->
 
 A minimal, yet powerful library that puts realtime Firebase data into Svelte stores.
 
